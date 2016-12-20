@@ -2,6 +2,13 @@
 
 > A formatted version lives at <https://hawkrives.github.io/resume/>.
 
+## Hawken MacKay Rives
+
+> (918) 578-9388 ⚘ hawkrives@gmail.com ⚘ [github.com/hawkrives](https://github.com/hawkrives)  
+> Lives in Oklahoma, USA.
+
+Diligent worker with an aptitude for applying knowledge to new situations. Intermediate level of proficiency in Japanese; skilled with Python, C++, and ECMAScript, with limited exposure to Scheme and Java. Eagle scout.
+
 ## Education
 
 #### St. Olaf College, Northfield, Minnesota
