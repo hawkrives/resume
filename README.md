@@ -7,7 +7,7 @@
 > (918) 578-9388 ⚘ hawkrives@gmail.com ⚘ [github.com/hawkrives](https://github.com/hawkrives)  
 > Lives in Oklahoma, USA.
 
-Diligent worker with an aptitude for applying knowledge to new situations. Intermediate level of proficiency in Japanese; skilled with Python, C++, and ECMAScript, with limited exposure to Scheme and Java. Eagle scout.
+Diligent worker with an aptitude for applying knowledge to new situations. Intermediate level of proficiency in Japanese; skilled with Python, C++, and ECMAScript, with limited exposure to Scheme and Java. Eagle scout from the Indian Nations Council in Oklahoma.
 
 ## Education
 
@@ -77,3 +77,7 @@ A multi-faceted, modular status board, this project’s primary purpose is to mo
 #### [Hybsearch](https://github.com/hawkrives/hybsearch)
 
 A team project in Bioinformatics, this application takes a phylogenetic tree and looks for instances of nonmonophyly. It identifies the cause of the nonmonophyly, and will allow for the first large-scale analysis of the occurence rate of the phemenon.
+
+#### [All About Olaf](https://github.com/stodevx/aao-react-native)
+
+An iOS/Android application written with React Native for colocating a bunch of information for students of St. Olaf College. Written by a group of former and current students, it allows you to see a bunch of information that is interesting and relevant to St. Olaf students.
