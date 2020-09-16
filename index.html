@@ -1,195 +1,349 @@
 <!doctype html>
-<html lang='en-us' dir='ltr'>
+<html lang="en-us" dir="ltr">
 <head>
-	<meta charset='utf-8'>
+	<meta charset="utf-8">
 	<title>Resumé – Hawken MacKay Rives</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-	body {
-		font-family: Georgia, serif;
-		font-size: 16px;
+		body {
+			font-family: ui-serif, Georgia, serif;
+			font-size: 16px;
 
-		max-width: 40em;
-		margin: 2em auto;
-		padding: 0 2em;
-		line-height: 1.35em;
+			max-width: 40em;
+			margin: 2em auto;
+			padding: 0 2em;
+			line-height: 1.35em;
 
-		-webkit-hyphens: auto;
-		hyphens: auto;
-	}
+			-webkit-hyphens: auto;
+			hyphens: auto;
+		}
 
-	p {
-		margin: 0;
-	}
-	a {
-		color: currentColor;
-	}
+		p {
+			margin: 0;
+		}
+		a {
+			color: currentColor;
+			text-decoration-skip: ink;
+			text-decoration-skip-ink: auto;
+		}
 
-	#header {
-		text-align: right;
-	}
-	#header h1 {
-		font-size: 1.4em;
-		font-weight: normal;
-		margin-top: 0;
-		margin-bottom: 0.25em;
-	}
-	#header p {
-		margin: 0;
-	}
-	#header span + span::before {
-		content: ' ⚘ ';
-		padding: 0 0.15em;
-	}
+		#header {
+			margin-bottom:  -0.5em;
+		}
 
-	.group > h1 {
-		font-size: 1.3em;
-		margin-top: 1.2em;
-		margin-bottom: 0.2em;
-	}
+		#header {
+			text-align: right;
+		}
+		#header h1 {
+			font-size: 1.4em;
+			font-weight: normal;
+			margin-top: 0;
+			margin-bottom: 0.25em;
+		}
+		#header p {
+			margin: 0;
+		}
+		#header span + span::before {
+			content: " ⚘ ";
+			padding: 0 0.15em;
+		}
 
-	.group > h1::before {
-		content: '¶ ';
-		margin-left: -0.5em;
-	}
+		.group > h1 {
+			font-size: 1.3em;
+			margin-top: 1.2em;
+			margin-bottom: 0.2em;
+		}
 
-	.entry h2,
-	.entry h3 {
-		font-size: 1em;
-		font-style: italic;
-		font-weight: normal;
-		margin: 0;
-	}
-	.entry ul {
-		margin: 0;
-		padding-left: 20px;
-	}
-	.entry + .entry {
-		margin-top: 1em;
-	}
+		.group > h1::before {
+			content: "¶ ";
+			margin-left: -0.85em;
+		}
 
-	.page-break {
-		margin: 0;
-		margin-top: 3.2em;
-		margin-bottom: 3em;
+		.entry h2,
+		.entry h3 {
+			font-size: 1em;
+			font-style: italic;
+			font-weight: normal;
+			margin: 0;
+		}
+		.entry ul {
+			margin: 0;
+			padding-left: 20px;
+		}
+		.entry + .entry {
+			margin-top: 1em;
+		}
 
-		border-style: solid;
-		border-width: 1px;
-		border-color: #666;
+		.page-break {
+			margin: 0;
+			margin-top: 3.2em;
+			margin-bottom: 3em;
 
-		border-radius: 1px;
-	}
+			border-style: solid;
+			border-width: 1px;
+			border-color: #666;
+
+			border-radius: 1px;
+
+			break-after: page;
+		}
+		@media print {
+			.page-break {
+				display:  none;
+			}
+			.page-break + * {
+				break-before: page;
+			}
+		}
+
+		#internal-projects .entry .name,
+		#projects .entry .name {
+			font-weight: bold;
+		}
+
+		[data-todo] {
+			border: solid 1px wheat;
+		}
+
+
+		.entry h2, .entry h3 {
+			font-weight: bold;
+			font-style: normal;
+			/*font-size: 12px;*/
+		}
+		.entry h3 {
+			font-size:  0.8em;
+			/*text-align:  right;*/
+		}
+		.entry h2 {
+			background-color: rgba(0, 0, 0, 0.1);
+			margin-left:  -1em;
+			padding-left:  1em;
+			margin-right:  -1em;
+			padding-right:  1em;
+		}
+
+		@media screen and (prefers-color-scheme:  dark) {
+			body {
+				background-color:  #000;
+				color: #d0d0d0;
+
+				font-family: ui-sans-serif, -apple-system;
+			}
+			#header, h1, .entry h2 {
+				color:  #efefef;
+			}
+			.entry h2 {
+				background-color:  rgba(255, 255, 255, 0.1);
+			}
+		}
+
+		@media print {
+			body {
+				font-size: 12px;
+				max-width: 100%;
+			}
+
+		}
+
+		@page {
+			margin-top: 0.3in;
+			margin-bottom: 0.3in;
+		}
+
+		.entry h2,
+		.entry h3 {
+			display:  flex;
+		}
+		.entry h2 span,
+		.entry h3 span {
+			flex: 1.5;
+		}
+		.entry h2 span:nth-child(2),
+		.entry h3 span:nth-child(2) {
+			flex: 1;
+			text-align: right;
+			width: max-content;
+		}
+
+		.entry h3 ~ h3 {
+			margin-top:  0.6em;
+		}
+
+		.awards {
+			list-style: circle;
+			/*font-style:  italic;*/
+		}
+		.awards li::before {
+		}
+
+		.entry h3 + h3 {
+			margin-top: -0.35em;
+		}
+
+		h3.award span:first-child {
+			flex:  2;
+		}
+
 	</style>
 </head>
 <body>
-	<header id='header'>
-		<h1>Hawken MacKay Rives</h1>
-		<p>Oklahoma, USA</p>
-		<p><span class='phone'>(918) 578-9388</span><span class='email'><a href='mailto:hawkrives@gmail.com'>hawkrives@gmail.com</a></span><span class='url'><a href='https://www.github.com/hawkrives'>github.com/hawkrives</a></span></p>
+	<header id="header" style="text-align: center;">
+		<h1 style="flex: 1.5;">Hawken MacKay Rives</h1>
+		<p>
+			<span class="url"><a href="https://www.github.com/hawkrives">github.com/hawkrives</a></span>
+			<span class="email"><a href="mailto:resume@hawkrives.fastmail.fm">resume@hawkrives.fastmail.fm</a></span>
+		</p>
+
+		<p style="font-size: 0.8em; line-height: 1.2; max-width: 44em; margin: 0.6em auto 0; -webkit-hyphens:  none; hyphens: none;">
+			Rust, Swift, Python, Javascript, Typescript, ColdFusion, PHP, Perl, Objective-C<br/>
+			PostgreSQL, MariaDB, IBM DB2, SQLite, Lodash &mdash;
+			React, WordPress, Flask, FuseBox
+		</p>
 	</header>
 
-	<section class='group' id='profile'>
-		<h1>Profile</h1>
-		<p>
-			Diligent worker with an aptitude for applying knowledge to new situations. Intermediate level of proficiency in Japanese; skilled with Python, C++, and ECMAScript, with limited exposure to Scheme and Java. Eagle scout.
-		</p>
-	</section>
-
-	<section class='group' id='education'>
+	<section class="group" id="education">
 		<h1>Education</h1>
 
-		<div class='entry'>
-			<h2>St. Olaf College, Northfield, Minnesota</h2>
-			<p>B.A. in Computer Science and Asian Studies, May 2016</p>
-			<p>GPA: 2.99; Computer Science GPA: 3.53.</p>
-		</div>
-
-		<div class='entry'>
-			<h2>Study Abroad, Lexis Japan, Kōbe, Japan</h2>
-			<p>No degree, June–July 2015</p>
-		</div>
+		<article class="entry">
+			<h2>
+				<span>St. Olaf College</span> <span>Northfield, MN</span>
+			</h2>
+			<h3>
+				<span>Bachelor of Arts in Computer Science and Asian Studies</span>
+				<span>May 2016</span>
+			</h3>
+			<!-- <p>GPA: 2.99; Computer Science GPA: 3.53</p> -->
+		</article>
 	</section>
 
-	<section class='group' id='experience'>
-		<h1>Experience</h1>
+	<section class="group" id="experience">
+		<h1>Selected Professional Experience</h1>
 
-		<div class='entry'>
-			<h2>Assistant to the Macintosh Systems Administrator, St. Olaf College; Northfield, MN</h2>
-			<h3>Feb. 2013–May 2016</h3>
+		<article class="entry">
+			<h2><span>St. Olaf College</span> <span>Northfield, MN</span></h2>
+
+
+			<h3 class="award">
+				<span>ROAR (Recognizing Outstanding and Admirable Results) Award</span>
+				<span>August 2020</span>
+			</h3>
+			<p>
+				Awarded for work on the online registration system.
+			</p>
+
+			<h3 class="award">
+				<span>President&rsquo;s Award</span>
+				<span>November 2019</span>
+			</h3>
+			<p>
+				Awarded for the launch of DegreePath.
+			</p>
+
+			<h3><span>Web Developer</span> <span>March 2017 &ndash; Present</span></h3>
+			<ul>
+				<li>Currently building an automated degree audit system, DegreePath, for the college registrar.</li>
+				<li>Developed an online registration system for first-year students.</li>
+				<li>Built a package tracking system for the the college post office.</li>
+				<li>Led roll-out and integration of new website theme.</li>
+				<li>Built equipment checkout system for the music department.</li>
+				<li>Rebuilt database and batch jobs for the telecommunications department.</li>
+				<li>Assisted with launch and rollout of new college VoIP system.</li>
+				<!-- <li>Restructured nightly batch processing jobs to complete in fractions of the time.</li> -->
+			</ul>
+
+			<!-- <h3>
+				<span>Assistant to the Macintosh Systems Administrator</span>
+				<span>February 2013 &ndash; May 2016</span>
+			</h3>
 			<ul>
 				<li>Repaired hardware and software for campus Macs.</li>
-				<li>Learned to manage and maintain campus-wide fleet of dual-boot Macs.</li>
+				<li>Managed and maintained campus-wide fleet of dual-boot Macs.</li>
 				<li>Deployed 120-odd new Macs across campus each year.</li>
-			</ul>
-		</div>
+			</ul> -->
 
-		<div class='entry'>
-			<h2>IT Assistant to Joachim Reppmann; Northfield, MN</h2>
-			<h3>Dec. 2012–May 2016</h3>
+			<!-- <h3><span>Computer Science Teaching Assistant</span> <span>September 2014 &ndash; May 2016</h3>
 			<ul>
-				<li>Maintained computer and associated personal technology.</li>
-				<li>Designed and layed out brochures for provided German-language texts.</li>
-				<li>Managed and advised on web presence for the business.</li>
+				<li>Built a set of semi-automated grading tools for analyzing homework submissions.</li>
+				<li>Graded homework for our <em>Principles of Computer Science</em> and <em>Software Design</em> courses.</li>
 			</ul>
-		</div>
 
-		<div class='entry'>
-			<h2>Computer Science Teaching Assistant, St. Olaf College; Northfield, MN</h2>
-			<h3>Sept. to Dec. 2013; Sept. 2014–May 2016</h3>
-			<ul>
-				<li>Built a set of semi-automated grading tools for analysing homework submissions.</li>
-				<li>Graded homework for our <em>Principles of Computer Science</em> and <em> Software Design</em> courses.</li>
-			</ul>
-		</div>
-
-		<div class='entry'>
-			<h2>IT Helpdesk Associate, St. Olaf College; Northfield, MN</h2>
-			<h3>Sept. 2012–Jan. 2013</h3>
+			<h3><span>IT Helpdesk Associate</span> <span>September 2012 &ndash; January 2013</span></h3>
 			<ul>
 				<li>Built a status board for internal helpdesk statistics.</li>
 				<li>Migrated faculty, staff, and students to a new printing system over two weeks.</li>
-			</ul>
-		</div>
+			</ul> -->
+		</article>
 
-		<div class='entry'>
-			<h2>In-House Computer Expert, Benchmark Monument; Tulsa, OK</h2>
-			<h3>Sept. 2010–Present</h3>
+		<article class="entry">
+			<h2><span>Benchmark Monument</span> <span>Tulsa, OK</span></h2>
+			<h3><span>In-House Developer</span> <span>January 2017 &ndash; March 2017</span></h3>
+			<ul>
+				<li>Built internal job tracking system.</li>
+				<li>Developed metadata schema for internal photos of completed stones.</li>
+			</ul>
+			<h3><span>In-House Computer Expert</span> <span>September 2010 &ndash; August 2012</span></h3>
 			<ul>
 				<li>Advised on technology purchasing decisions.</li>
 				<li>Maintained all computers and associated technology.</li>
 			</ul>
-		</div>
+
+			<!-- <h3><span>In-House Computer Expert</span> <span>September 2010 &ndash; August 2012</span></h3>
+			<ul>
+				<li>Advised on technology purchasing decisions.</li>
+				<li>Maintained all computers and associated technology.</li>
+			</ul> -->
+		</article>
+
+		<article class="entry">
+			<h2><span>Innovative Language Learning</span> <span>Tokyo, Japan</span></h2>
+			<h3><span>Intern, Junior Chief of Migration Affairs</span> <span>June 2016 &ndash; December 2016</span></h3>
+			<ul>
+				<li>Migrated internal multi-language dictionary to an Angular webapp.</li>
+			</ul>
+		</article>
+
+<!--
+		<article class="entry">
+			<h2><span>Moin-Moin.us</span> <span>Northfield, MN</span></h2>
+			<h3><span>IT Assistant to Joachim Reppmann</span> <span>December 2012 &ndash; May 2016</span></h3>
+			<ul>
+				<li>Maintained computer and associated personal technology.</li>
+				<li>Designed brochures for provided German-language texts.</li>
+				<li>Managed and advised on web presence for the business.</li>
+			</ul>
+		</article>
+ -->
 	</section>
 
-	<hr class='page-break' />
+	<section class="group" id="projects">
+		<h1>Selected Open-Source Projects</h1>
 
-	<section class='group' id='projects'>
-		<h1>Projects</h1>
+		<article class="entry">
+			<h2>All About Olaf / CARLS (MIT)</h2>
+			<p>Two iOS/Android React Native applications, for St. Olaf College and Carleton College respectively, which organize information from the student's perspective, instead of grouping it by the department that owns it.</p>
+		</article>
 
-		<div class='entry'>
-			<h2>Gobbldygook • <a href='https://github.com/hawkrives/gobbldygook'>github</a></h2>
-			<p>A scheduling assistant for students at St. Olaf College, built answer the question: given your course load, and what you want to major in, can you graduate on time?</p>
-		</div>
+		<article class="entry">
+			<h2>DegreePath (AGPLv3)</h2>
+			<p>An automated degree audit tool for St. Olaf College which explores the possible solutions to an area of study to find the best possible solution, given a specification file and a set of student data.</p>
+		</article>
 
-		<div class='entry'>
-			<h2>CS Grading Toolkit • <a href='https://github.com/StoDevX/cs251-toolkit'>github</a></h2>
-			<p>A tool to streamline the grading process for CS courses, it coallates submissions and performs automated checks to ease the burden on the graders.</p>
-		</div>
+		<article class="entry">
+			<h2>Gobbldygook (AGPLv3)</h2>
+			<p>A scheduling assistant for students at St. Olaf College, built to answer the question: given your course load, and what you want to major in, can you graduate on time?</p>
+		</article>
 
-		<div class='entry'>
-			<h2>Tiled Display • <a href='https://github.com/StoDevX/purple-dragons'>github</a></h2>
-			<p>Part of my CS Capstone team project, the original goal was to render a 3D model of Regents Hall across as many monitors as we could. It currently renders a warp drive simulation across nine displays in a square.</p>
-		</div>
+		<article class="entry">
+			<h2>stograde (MIT)</h2>
+			<p>A tool built to streamline the grading process for Computer Science courses, it collates submissions and performs automated checks to ease the burden on the graders.</p>
+		</article>
 
-		<div class='entry'>
-			<h2>IT Status Board • <a href='https://github.com/hawkrives/stolaf-ubersicht-widgets'>github</a></h2>
-			<p>A multi-faceted, modular status board, this project’s primary purpose is to monitor the campus printers for any errors. It also tracks who has responded to the most tickets on a leaderboard, and provides a central location to see who works next.</p>
-		</div>
-
-		<div class='entry'>
-			<h2>Hybsearch • <a href='https://github.com/hawkrives/hybsearch'>github</a></h2>
-			<p>A team project in Bioinformatics, this application takes a phylogenetic tree and looks for instances of nonmonophyly. It identifies the cause of the nonmonophyly, and will allow for the first large-scale analysis of the occurence rate of the phemenon.</p>
-		</div>
+		<article class="entry">
+			<h2>Hybsearch (MIT)</h2>
+			<p>A team project in Bioinformatics, Hybsearch takes a phylogenetic tree and looks for instances of nonmonophyly, a type of cross-species hybridization. It facilitates automated analysis of the occurrence rate of nonmonophyly.</p>
+		</article>
 	</section>
+
 </body>
 </html>

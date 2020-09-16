@@ -4,80 +4,60 @@
 
 ## Hawken MacKay Rives
 
-> (918) 578-9388 ⚘ hawkrives@gmail.com ⚘ [github.com/hawkrives](https://github.com/hawkrives)  
-> Lives in Oklahoma, USA.
+> (918) 578-9388 ⚘ resume@hawkrives.fastmail.fm ⚘ [github.com/hawkrives](https://github.com/hawkrives)
 
-Diligent worker with an aptitude for applying knowledge to new situations. Intermediate level of proficiency in Japanese; skilled with Python, C++, and ECMAScript, with limited exposure to Scheme and Java. Eagle scout from the Indian Nations Council in Oklahoma.
+Rust, Swift, Python, Javascript, Typescript, ColdFusion, PHP, Perl, Objective-C
+PostgreSQL, MariaDB, IBM DB2, SQLite, Lodash
+React, WordPress, Flask, FuseBox
 
 ## Education
 
-#### St. Olaf College, Northfield, Minnesota
-> B.A. in Computer Science and Asian Studies, May 2016  
-> GPA: 2.99; Computer Science GPA: 3.53.
+#### St. Olaf College – Northfield, MN
+> Bachelor of Arts in Computer Science and Asian Studies, May 2016
 
-#### Study Abroad, Lexis Japan, Kōbe, Japan
-> No degree, June–July 2015
+## Selected Professional Experience
+#### St. Olaf College – Northfield, MN
+###### ROAR (Recognizing Outstanding and Admirable Results) Award, August 2020
+Awarded for work on the online registration system.
 
-## Experience
+###### President’s Award, November 2019
+Awarded for the launch of DegreePath.
 
-#### Assistant to the Macintosh Systems Administrator, St. Olaf College; Northfield, MN
-> Feb. 2013–May 2016
+###### Web Developer, March 2017 – Present
+- Currently building an automated degree audit system, DegreePath, for the college registrar.
+- Developed an online registration system for first-year students.
+- Built a package tracking system for the the college post office.
+- Led roll-out and integration of new website theme.
+- Built equipment checkout system for the music department.
+- Rebuilt database and batch jobs for the telecommunications department.
+- Assisted with launch and rollout of new college VoIP system.
 
-- Repaired hardware and software for campus Macs.
-- Learned to manage and maintain campus-wide fleet of dual-boot Macs.
-- Deployed 120-odd new Macs across campus each year.
+#### Benchmark Monument – Tulsa, OK
+###### In-House Developer, January 2017 – March 2017
+- Built internal job tracking system.
+- Developed metadata schema for internal photos of completed stones.
 
-#### IT Assistant to Joachim Reppmann; Northfield, MN
-> Dec. 2012–May 2016
-
-- Maintained computer and associated personal technology.
-- Designed and layed out brochures for provided German-language texts.
-- Managed and advised on web presence for the business.
-
-
-#### Computer Science Teaching Assistant, St. Olaf College; Northfield, MN
-> Sept. to Dec. 2013; Sept. 2014–May 2016
-
-- Built a set of semi-automated grading tools for analysing homework submissions.
-- Graded homework for our *Principles of Computer Science* and *Software Design* courses.
-
-
-#### IT Helpdesk Associate, St. Olaf College; Northfield, MN
-> Sept. 2012–Jan. 2013
-
-- Built a status board for internal helpdesk statistics.
-- Migrated faculty, staff, and students to a new printing system over two weeks.
-
-
-#### In-House Computer Expert, Benchmark Monument; Tulsa, OK
-> Sept. 2010–Present
-
+###### In-House Computer Expert, September 2010 – August 2012
 - Advised on technology purchasing decisions.
 - Maintained all computers and associated technology.
 
+#### Innovative Language Learning, Tokyo, Japan
+###### Intern, Junior Chief of Migration Affairs, June 2016 – December 2016
+- Migrated internal multi-language dictionary to an Angular webapp.
 
-## Projects
+## Selected Open-Source Projects
 
-#### [Gobbldygook](https://github.com/hawkrives/gobbldygook)
+#### [All About Olaf](https://github.com/StoDevX/AAO-React-Native) / [CARLS](https://github.com/carls-app/CARLS) (MIT)
+Two iOS/Android React Native applications, for St. Olaf College and Carleton College respectively, which organize information from the student's perspective, instead of grouping it by the department that owns it.
 
-A scheduling assistant for students at St. Olaf College, built answer the question: given your course load, and what you want to major in, can you graduate on time?
+#### [DegreePath](https://github.com/degreepath/auditor) (AGPLv3)
+An automated degree audit tool for St. Olaf College which explores the possible solutions to an area of study to find the best possible solution, given a specification file and a set of student data.
 
-#### [CS Grading Toolkit](https://github.com/StoDevX/cs251-toolkit)
+#### [Gobbldygook](https://github.com/hawkrives/gobbldygook) (AGPLv3)
+A scheduling assistant for students at St. Olaf College, built to answer the question: given your course load, and what you want to major in, can you graduate on time?
 
-A tool to streamline the grading process for CS courses, it coallates submissions and performs automated checks to ease the burden on the graders.
+#### [stograde](https://github.com/StoDevX/stograde) (MIT)
+A tool built to streamline the grading process for Computer Science courses, it collates submissions and performs automated checks to ease the burden on the graders.
 
-#### [Tiled Display](https://github.com/StoDevX/purple-dragons)
-
-Part of my CS Capstone team project, the original goal was to render a 3D model of Regents Hall across as many monitors as we could. It currently renders a warp drive simulation across nine displays in a square.
-
-#### [IT Status Board](https://github.com/hawkrives/stolaf-ubersicht-widgets)
-
-A multi-faceted, modular status board, this project’s primary purpose is to monitor the campus printers for any errors. It also tracks who has responded to the most tickets on a leaderboard, and provides a central location to see who works next.
-
-#### [Hybsearch](https://github.com/hawkrives/hybsearch)
-
-A team project in Bioinformatics, this application takes a phylogenetic tree and looks for instances of nonmonophyly. It identifies the cause of the nonmonophyly, and will allow for the first large-scale analysis of the occurence rate of the phemenon.
-
-#### [All About Olaf](https://github.com/stodevx/aao-react-native)
-
-An iOS/Android application written with React Native for colocating a bunch of information for students of St. Olaf College. Written by a group of former and current students, it allows you to see a bunch of information that is interesting and relevant to St. Olaf students.
+#### [Hybsearch](https://github.com/hybsearch/hybsearch) (MIT)
+A team project in Bioinformatics, Hybsearch takes a phylogenetic tree and looks for instances of nonmonophyly, a type of cross-species hybridization. It facilitates automated analysis of the occurrence rate of nonmonophyly.
